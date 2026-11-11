@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0027-remove-element](https://github.com/SajalK326/LeetCode-Submissions/tree/master/0027-remove-element) |
 | [1480-running-sum-of-1d-array](https://github.com/SajalK326/LeetCode-Submissions/tree/master/1480-running-sum-of-1d-array) |
 | [1920-build-array-from-permutation](https://github.com/SajalK326/LeetCode-Submissions/tree/master/1920-build-array-from-permutation) |
 ## Simulation
@@ -14,4 +15,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1480-running-sum-of-1d-array](https://github.com/SajalK326/LeetCode-Submissions/tree/master/1480-running-sum-of-1d-array) |
+## Two Pointers
+|  |
+| ------- |
+| [0027-remove-element](https://github.com/SajalK326/LeetCode-Submissions/tree/master/0027-remove-element) |
 <!---LeetCode Topics End-->
