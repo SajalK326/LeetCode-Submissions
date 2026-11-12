@@ -1,10 +1,14 @@
 class Solution {
 public:
     int maximumWealth(vector<vector<int>>& accounts) {
-        int wealth=0, max_wealth=0;
+        int max_wealth=0;
 
         for(int i=0; i<accounts.size(); i++){
-            wealth=accumulate(accounts[i].begin(), accounts[i].end(), 0);
+            int wealth=0;
+            
+            for(int j=0; j<accounts[i].size(); j++){
+                wealth+=accounts[i][j];
+            }
             max_wealth=max(max_wealth, wealth);
         }
 
