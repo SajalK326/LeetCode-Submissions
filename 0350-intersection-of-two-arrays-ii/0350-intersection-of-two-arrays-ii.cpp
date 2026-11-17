@@ -1,18 +1,19 @@
 class Solution {
 public:
     vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
-        // Brute Force
+        // Using Unordered Map
 
+        unordered_map<int, int> counts;
         vector<int> intersection;
-        vector<bool> visited(nums2.size(), false);
 
-        for(int i=0; i<nums1.size(); i++){
-            for(int j=0; j<nums2.size(); j++){
-                if(nums1[i]==nums2[j] && !visited[j]){
-                    intersection.emplace_back(nums1[i]);
-                    visited[j]=true;
-                    break;
-                }
+        for(auto iter:nums1){
+            counts[iter]++;
+        }
+
+        for(auto iter:nums2){
+            if(counts[iter]>0){
+                intersection.emplace_back(iter);
+                counts[iter]--;
             }
         }
         
